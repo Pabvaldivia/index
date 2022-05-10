@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo formulario</title>
+
+</script>
+</head>
+
+<body>
+    <h1>Formulario de contacto</h1>
+    <form action="procesar.php" method="get" name="fomulario">
+      
+        Nombre completo:<input name="Nombre" type="text" value="" placeholder="Ingrese su nombre"><br>
+        <br> Email:
+        <input name="pasaporte" type="text" value="" placeholder="Igrese su correo">
+        <br><br>
+        <input type="text" id="rut" name="rut" required oninput="checkRut(this)" placeholder="Ingrese RUT">
+        <script src="validarRUT.js"></script>
+        <br><br>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+        </div>
+        <br><br>
+        <label for="Comentario">Comentario: </label>
+        <br>
+        <textarea name="Comentario" id="" cols="30" rows="10"></textarea>
+        <br><br>
+        <br><br>
+        <input type="submit" value="Enviar">
+        
+        <br><br>
+        <input type="reset" value="Limpiar">
+    </form>
+</body>
+
+</html>
